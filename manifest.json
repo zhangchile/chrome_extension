@@ -1,0 +1,22 @@
+{
+"name": "Back2Top",
+"manifest_version": 2,
+"version": "1.0",
+"description": "Back2Top",
+"icons": { "128": "icon.jpg" },
+"content_scripts": [{
+"matches": ["http://*/*"],
+"js": ["js/cs.js"]
+}],
+"page_action":{
+    "default_icon":"top.png",
+    "default_title":"back2top",
+    "default_popup":"popup.html"
+},
+"background": {
+    "scripts": ["js/bg.js"]
+  },
+"permissions":[
+    "tabs"
+]
+}
